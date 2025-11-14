@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Craftcodex - Our Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .group .group-open\:block {
+      display: none;
+    }
+
+    .group.open .group-open\:block {
+      display: block;
+    }
+
+    .group.open .group-open\:hidden {
+      display: none;
+    }
+
+    .group.open .group-open\:rotate-180 {
+      transform: rotate(180deg);
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#3c3cf6", // Note: The user prompt specified #3B82F6, but the theme config provided #3c3cf6. Sticking to the config.
+            "background-light": "#f5f5f8",
+            "background-dark": "#111827", // Main background
+            "surface-dark": "#1F2937", // Card backgrounds
+            "text-heading-dark": "#F9FAFB",
+            "text-body-dark": "#D1D5DB",
+            "text-subtle-dark": "#6B7280",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="flex flex-col min-h-screen">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full bg-background-dark/80 backdrop-blur-sm border-b border-surface-dark/50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<a class="flex-shrink-0 flex items-center gap-2" href="#">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5L6 12l1.41-1.41L10.5 15.17l6.09-6.09L18 10.5l-7.5 7.5z"></path>
+</svg>
+<span class="text-xl font-bold text-text-heading-dark">Craftcodex</span>
+</a>
+</div>
+<div class="hidden md:flex md:items-center md:space-x-8">
+<a class="text-text-body-dark hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-text-body-dark hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="text-primary font-medium" href="#">Services</a>
+<a class="text-text-body-dark hover:text-primary transition-colors duration-200" href="#">Blog</a>
+<a class="text-text-body-dark hover:text-primary transition-colors duration-200" href="#">Contact Us</a>
+</div>
+<div class="flex items-center">
+<a class="hidden md:inline-block bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors duration-200" href="#">Get a Quote</a>
+<button class="md:hidden p-2 rounded-md text-text-body-dark hover:text-white hover:bg-surface-dark focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" type="button">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-20 sm:py-24 lg:py-32">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-text-heading-dark">
+            Crafting Digital Solutions for Modern Businesses
+          </h1>
+<p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-text-body-dark">
+            From intuitive web applications to scalable custom systems, we build the tools you need to succeed.
+          </p>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 sm:py-20 lg:py-24 bg-background-light dark:bg-background-dark" id="services">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<div class="space-y-4">
+<!-- Service Card 1: Web Application Development -->
+<div class="group bg-surface-dark rounded-xl border border-transparent hover:border-primary/50 transition-all duration-300">
+<button class="w-full p-6 text-left flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 p-3 rounded-lg">
+<span class="material-icons text-primary">web</span>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-text-heading-dark">Web Application Development</h3>
+<p class="text-text-subtle-dark mt-1">Building responsive, high-performance web apps.</p>
+</div>
+</div>
+<span class="material-icons text-text-subtle-dark group-hover:text-primary transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</button>
+<div class="group-open:block overflow-hidden transition-all duration-300">
+<div class="px-6 pb-6 pt-2 border-t border-white/10">
+<p class="text-text-body-dark mb-4">
+                      We engineer powerful, scalable, and secure web applications tailored to your business needs. Our team utilizes modern frameworks and best practices to deliver exceptional user experiences, from complex SaaS platforms to intuitive customer portals.
+                    </p>
+<h4 class="font-semibold text-text-heading-dark mb-2">Best For:</h4>
+<ul class="list-disc list-inside space-y-1 text-text-body-dark">
+<li>SaaS Platforms</li>
+<li>Customer Portals</li>
+<li>E-commerce Solutions</li>
+<li>Internal Business Tools</li>
+</ul>
+<a class="inline-block mt-4 text-primary font-medium hover:underline" href="#">See Case Studies →</a>
+</div>
+</div>
+</div>
+<!-- Service Card 2: Mobile App Development -->
+<div class="group bg-surface-dark rounded-xl border border-transparent hover:border-primary/50 transition-all duration-300 open">
+<button class="w-full p-6 text-left flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 p-3 rounded-lg">
+<span class="material-icons text-primary">smartphone</span>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-text-heading-dark">Mobile App Development</h3>
+<p class="text-text-subtle-dark mt-1">Creating native and cross-platform mobile experiences.</p>
+</div>
+</div>
+<span class="material-icons text-text-subtle-dark group-hover:text-primary transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</button>
+<div class="group-open:block overflow-hidden transition-all duration-300">
+<div class="px-6 pb-6 pt-2 border-t border-white/10">
+<p class="text-text-body-dark mb-4">
+                      Our mobile development process focuses on performance, usability, and seamless integration. Whether you need a native iOS/Android app or a cost-effective cross-platform solution, we build mobile experiences that engage your users and drive results.
+                    </p>
+<h4 class="font-semibold text-text-heading-dark mb-2">Best For:</h4>
+<ul class="list-disc list-inside space-y-1 text-text-body-dark">
+<li>Consumer-Facing Applications</li>
+<li>On-demand Service Platforms</li>
+<li>Enterprise Mobility Solutions</li>
+<li>IoT and Wearable Companion Apps</li>
+</ul>
+<a class="inline-block mt-4 text-primary font-medium hover:underline" href="#">Learn More →</a>
+</div>
+</div>
+</div>
+<!-- Service Card 3: Custom Systems & Integrations -->
+<div class="group bg-surface-dark rounded-xl border border-transparent hover:border-primary/50 transition-all duration-300">
+<button class="w-full p-6 text-left flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 p-3 rounded-lg">
+<span class="material-icons text-primary">hub</span>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-text-heading-dark">Custom Systems &amp; Integrations</h3>
+<p class="text-text-subtle-dark mt-1">Engineering bespoke software tailored to your workflow.</p>
+</div>
+</div>
+<span class="material-icons text-text-subtle-dark group-hover:text-primary transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</button>
+<div class="group-open:block overflow-hidden transition-all duration-300">
+<div class="px-6 pb-6 pt-2 border-t border-white/10">
+<p class="text-text-body-dark mb-4">
+                      We design and build custom software systems from the ground up to solve unique business challenges. From API development and third-party integrations to full-scale enterprise resource planning (ERP) systems, we create solutions that streamline operations and unlock new efficiencies.
+                    </p>
+<h4 class="font-semibold text-text-heading-dark mb-2">Best For:</h4>
+<ul class="list-disc list-inside space-y-1 text-text-body-dark">
+<li>Workflow Automation</li>
+<li>Third-Party API Integrations</li>
+<li>Data Processing &amp; Analytics Pipelines</li>
+<li>Legacy System Modernization</li>
+</ul>
+<a class="inline-block mt-4 text-primary font-medium hover:underline" href="#">Discuss a Project →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-dark/50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<a class="flex items-center gap-2 mb-4" href="#">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5L6 12l1.41-1.41L10.5 15.17l6.09-6.09L18 10.5l-7.5 7.5z"></path>
+</svg>
+<span class="text-xl font-bold text-text-heading-dark">Craftcodex</span>
+</a>
+<p class="text-text-subtle-dark max-w-sm">A modern software studio dedicated to building high-quality digital products.</p>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-text-heading-dark tracking-wider uppercase">Links</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-text-body-dark hover:text-primary" href="#">About Us</a></li>
+<li><a class="text-text-body-dark hover:text-primary" href="#">Services</a></li>
+<li><a class="text-text-body-dark hover:text-primary" href="#">Case Studies</a></li>
+<li><a class="text-text-body-dark hover:text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-sm font-semibold text-text-heading-dark tracking-wider uppercase">Connect</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-text-body-dark hover:text-primary" href="#">Twitter</a></li>
+<li><a class="text-text-body-dark hover:text-primary" href="#">LinkedIn</a></li>
+<li><a class="text-text-body-dark hover:text-primary" href="#">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-white/10 pt-8 text-center text-text-subtle-dark text-sm">
+<p>© 2024 Craftcodex. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const groups = document.querySelectorAll('.group');
+      groups.forEach(group => {
+        const button = group.querySelector('button');
+        button.addEventListener('click', () => {
+          group.classList.toggle('open');
+        });
+      });
+    });
+  </script>
+</body></html>

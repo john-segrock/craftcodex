@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Craftcodex - Contact Us</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              "background-light": "#f3f4f6", // Updated for better contrast
+              "background-dark": "#111827",
+              "gray-light": "#e5e7eb",
+              "gray-dark": "#4B5563",
+              "text-light": "#111827",
+              "text-dark": "#F9FAFB",
+              "text-secondary-light": "#4b5563",
+              "text-secondary-dark": "#9ca3af",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem", // Changed from 0.25rem to match design
+              "lg": "0.75rem", // Changed from 0.5rem
+              "xl": "1rem", // Changed from 0.75rem
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .form-input {
+            background-color: #1f2937;
+            border-color: #4B5563;
+            color: #F9FAFB;
+        }
+        .form-input:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            border-color: #3B82F6;
+            box-shadow: 0 0 0 2px #111827, 0 0 0 4px #3B82F6;
+        }
+        .form-input::placeholder {
+            color: #6b7280;
+        }
+        .form-radio {
+            color: #3B82F6;
+        }
+        .form-radio:focus {
+            ring-color: #3B82F6;
+            ring-offset-color: #111827;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between border-b border-gray-light dark:border-gray-dark/40">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)"><path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"></path><path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill-rule="evenodd"></path></g><defs><clippath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clippath></defs>
+</svg>
+</div>
+<h2 class="text-lg font-bold">Craftcodex</h2>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">Work</a>
+<a class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">Blog</a>
+</nav>
+<button class="flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span>Start a Project</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="mx-auto max-w-2xl text-center">
+<h1 class="text-4xl sm:text-5xl font-black tracking-tight">Let's Build Something Great Together</h1>
+<p class="mt-4 text-lg text-text-secondary-light dark:text-text-secondary-dark">Tell us about your project, and we'll get back to you within 24 hours.</p>
+</div>
+<div class="mx-auto mt-16 max-w-2xl">
+<div class="bg-background-light dark:bg-[#1f2937]/50 rounded-xl border border-gray-light dark:border-gray-dark/40 p-6 sm:p-8">
+<h2 class="text-2xl font-bold tracking-tight">Project Inquiry</h2>
+<form class="mt-8 space-y-6">
+<div class="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2">
+<div>
+<label class="block text-sm font-medium leading-6" for="full-name">Full Name</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-dark placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="Jane Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="work-email">Work Email</label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-dark placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="work-email" name="work-email" placeholder="you@company.com" type="email"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="company-name">Company <span class="text-text-secondary-light dark:text-text-secondary-dark">(Optional)</span></label>
+<div class="mt-2">
+<input class="form-input block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-dark placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="company-name" name="company-name" placeholder="Acme Inc." type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="project-type">What kind of project are you interested in?</label>
+<div class="mt-2">
+<select class="form-input block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-dark focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="project-type" name="project-type">
+<option>Web Application</option>
+<option>Mobile Application</option>
+<option>UI/UX Design</option>
+<option>Branding &amp; Identity</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div>
+<h3 class="text-sm font-medium leading-6">What is your estimated budget?</h3>
+<fieldset class="mt-2">
+<legend class="sr-only">Budget options</legend>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<label class="relative flex cursor-pointer rounded-lg border bg-background-light dark:bg-background-dark p-4 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-background-dark border-gray-light dark:border-gray-dark">
+<input aria-labelledby="budget-0-label" class="sr-only" name="budget" type="radio" value="&lt; $10k"/>
+<span class="text-sm font-medium" id="budget-0-label">&lt; $10k</span>
+</label>
+<label class="relative flex cursor-pointer rounded-lg border bg-background-light dark:bg-background-dark p-4 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-background-dark border-gray-light dark:border-gray-dark">
+<input aria-labelledby="budget-1-label" class="sr-only" name="budget" type="radio" value="$10k - $25k"/>
+<span class="text-sm font-medium" id="budget-1-label">$10k - $25k</span>
+</label>
+<label class="relative flex cursor-pointer rounded-lg border bg-background-light dark:bg-background-dark p-4 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-background-dark border-gray-light dark:border-gray-dark">
+<input aria-labelledby="budget-2-label" class="sr-only" name="budget" type="radio" value="$25k - $50k"/>
+<span class="text-sm font-medium" id="budget-2-label">$25k - $50k</span>
+</label>
+<label class="relative flex cursor-pointer rounded-lg border bg-background-light dark:bg-background-dark p-4 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-background-dark border-gray-light dark:border-gray-dark">
+<input aria-labelledby="budget-3-label" class="sr-only" name="budget" type="radio" value="$50k+"/>
+<span class="text-sm font-medium" id="budget-3-label">$50k+</span>
+</label>
+</div>
+</fieldset>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="message">Tell us about your project...</label>
+<div class="mt-2">
+<textarea class="form-input block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-dark placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="message" name="message" placeholder="Describe your goals, timeline, and any specific requirements." rows="4"></textarea>
+</div>
+</div>
+<div class="relative flex items-start">
+<div class="flex h-6 items-center">
+<input class="h-4 w-4 rounded form-checkbox border-gray-dark bg-background-dark text-primary focus:ring-primary focus:ring-offset-background-dark" id="consent" name="consent" type="checkbox"/>
+</div>
+<div class="ml-3 text-sm leading-6">
+<label class="font-medium" for="consent">You agree to our friendly <a class="font-semibold text-primary hover:underline" href="#">privacy policy</a>.</label>
+</div>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-lg bg-primary px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors" type="submit">Send Inquiry</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="border-t border-gray-light dark:border-gray-dark/40 pt-8 flex flex-col sm:flex-row items-center justify-between">
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">© 2024 Craftcodex. All rights reserved.</p>
+<div class="flex gap-4 mt-4 sm:mt-0">
+<a class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" data-alt="LinkedIn social media link" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-secondary-light dark:text-text-secondary-dark hover:text-text-light dark:hover:text-text-dark transition-colors" data-alt="GitHub social media link" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.578.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

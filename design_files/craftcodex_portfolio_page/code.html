@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Craftcodex - Our Work</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3B82F6",
+              "background-light": "#f5f5f8",
+              "background-dark": "#111827",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#9CA3AF]">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="sticky top-5 z-50 flex items-center justify-between whitespace-nowrap rounded-xl border border-solid border-white/10 bg-gray-900/50 px-6 py-3 backdrop-blur-sm">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Craftcodex</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Services</a>
+<a class="text-white text-sm font-medium leading-normal" href="#">Our Work</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-16">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Explore Our Portfolio</p>
+<p class="text-[#9CA3AF] text-base font-normal leading-normal">
+                                We build modern software solutions that drive results. Here's a look at some of our favorite projects.
+                            </p>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 p-3 flex-wrap pr-4 mt-8">
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#4B5563]/30 hover:bg-[#4B5563]/50 transition-colors pl-4 pr-4">
+<p class="text-white/80 text-sm font-medium leading-normal">Web Apps</p>
+</div>
+<div class="flex h-8 cursor-pointer shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#4B5563]/30 hover:bg-[#4B5563]/50 transition-colors pl-4 pr-4">
+<p class="text-white/80 text-sm font-medium leading-normal">Mobile Apps</p>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-4">
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for Project Nova" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIT_WeBy3vcIWcCCXMutBO8RHcKpn61rHWIlA7lmC9j70duugSQVxNij4K4cl9DIQn8z9sLrI6yfrMia33WHBKdY1ZDxudsFr7go81BGjNiXW9qYkyJpbdgAP6kleVM6RBzM46PYdUXeP60qRIKtW0BurQBG7oUzd3sJ6UrQtbUaF5ZTDTVTtW1Quj-80qfYVsX8rohKoppYoM2uCZ5ngQoLBxeRzafFamfkcOOZJZExXyjkZyVKJiNddV1toectVGPgSKilXn4w");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">Project Nova</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Web App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A streamlined project management tool for creative teams.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for Fintech Mobile App" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8II81SYeNDeI4lSHibk4BeQvus7B6VOyhtCeaVMCN1LgR7JZrLoruKPXxYXZyEJINpFHxNdC5i9mOReXrESXoL0nXRGbu9cqmPRhQkan18X63EZ5uZhqmmpAB7IbWQ161kwor-eIP4H-Bgts2Ru7FzG9lkocwMe5BhfQO1xoNBcMlfK8xnKYhaVVpSaS4OTJOMlbYHzi7UHVHJY-v0c16KFc5aFmh_l3KxNfz61KX1DLDJkufFaMqYoiMebDzlgBugDMYNyzcSg");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">Fintech Mobile App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Mobile App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A secure mobile banking application with intuitive UX.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for E-commerce Platform" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFbukmxn9UoUy9VeW-rOHw9tlDPguXKd4qehc3WA9R_JJkMfRcOGoCj7BUIXdVJmaDc8m8X5N4DkmIsZ441ib_dBX8Pdw5MtWBwjP6MNQMRriX4hhaSOsNBxW_Z-tXJK-VHszFb6P4kTlhJ3wiil_JgQU2evqj4DuFNOrqK0An8BCD5TrvIjqmgEgB5K1J5anDBALCbLeLhq5Kz40mMT_BBMLlf2hdwLW884Ocr5EN7izitNRjgDIf8U-OzhTbu0M26R3qeUHbaQ");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">E-commerce Platform</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Web App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A scalable online store built for a global fashion brand.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for SaaS Dashboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfuJ8WFc2oKLlRWhrbYeiA9v6LzUwGRiNgzqOleUyI0wXwqBy5ZW08t8skgzlM4unFfTJvpT03ZM7IqwI4Z9uq019_kW9FvDyPHKX_nKVtksrciafWIRLLg6A4LnzCe0QEbLe8I9-oQH5bpuVK8tWuXgZDv-MFK7wxkc9V6j3Egcy8LlFQIeq6hm9DqS2aCRN_0VYpKYm_nre3BOTVVSj9XpehGVBPwPW41xf9vJ58J5-ivR2pkJfA1C5IUe7aPBSB1UG-80_4Jw");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">SaaS Dashboard</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Web App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A data visualization dashboard for business intelligence.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for Healthcare Portal" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvGoVEm9efxAm4s78U4OUAqpEx7irWV0JZ3J-o9gcZcWqbqZgmX8v-0d6fg81ap05-WRhvGQCx2HLlKKkb4DUisDXkiIPzX4E7K0yNpweGHWsHTeJ8LKF-rdT0Yg62Jh-OmmcwdbaHKynvjFCfPM-1BbopIEe-u4PXFMRSXJzOluPn6G9AbYxOHm7OXjNtAp1hOcVxr5IdNfLZf0kb9k4hxCYqHLNgxVk61Y11pJ4jtr15AFuRhTplTJCEJ4woSWyHnlSmmcs01Q");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">Healthcare Portal</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Web App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A secure patient portal for a leading hospital network.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" data-alt="Abstract gradient background for Social Media App" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDjhjLY05EUm74-APV9E3usyKi51WWdO-xdF_CTVh0sQiRkzBFZgkRUejMVhkZ92kL1YZn6id5munrkjQRUk8b5DZMGwfy87NuQYT6LqkjDXQQoAYvrDpOETWR5_CSY3WGkcvoO-31RflIzbNDGiflteJDS5BmDwD3fAFxcpWmJUNJOUxRbR28094BSEvUlHHmk0Qw6HsnCECXSnMMQTDAhuSoDmU1eCHOE9c0Zo2KdnQAvQqZpywf2sRXqLUUvZ5q_zXj4Knp5A");'></div>
+<div class="flex flex-col gap-1">
+<p class="text-white text-base font-bold leading-normal">Social Media App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">Mobile App</p>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">A community-driven platform for sharing local events.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col gap-8 px-5 py-16 text-center border-t border-white/10 mt-20">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-[#9CA3AF] hover:text-white transition-colors text-base font-normal leading-normal" href="#">Home</a>
+<a class="text-[#9CA3AF] hover:text-white transition-colors text-base font-normal leading-normal" href="#">Services</a>
+<a class="text-white text-base font-normal leading-normal" href="#">Our Work</a>
+<a class="text-[#9CA3AF] hover:text-white transition-colors text-base font-normal leading-normal" href="#">Contact</a>
+<a class="text-[#9CA3AF] hover:text-white transition-colors text-base font-normal leading-normal" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-[#9CA3AF] hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-[#9CA3AF] hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M19.75 2.5a.75.75 0 00-.75.75v3.41L15.44 3.09a.75.75 0 00-1.082.982l2.953 3.444H13a.75.75 0 000 1.5h4.418l-2.953 3.444a.75.75 0 101.082.982l3.56-4.156A.75.75 0 0019 8.665V18.25a.75.75 0 001.5 0V3.25a.75.75 0 00-.75-.75z"></path><path d="M4.75 2.5a.75.75 0 00-.75.75v17.5a.75.75 0 001.5 0V3.25a.75.75 0 00-.75-.75zM8.25 8a.75.75 0 00-.75.75v6.5a.75.75 0 001.5 0v-6.5a.75.75 0 00-.75-.75z"></path></svg>
+</a>
+<a class="text-[#9CA3AF] hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+<p class="text-[#9CA3AF] text-sm font-normal leading-normal">© 2024 Craftcodex. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Craftcodex - Modern Software Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3B82F6",
+                        "background-light": "#f5f5f8",
+                        "background-dark": "#111827",
+                        "card-dark": "#1F2937",
+                        "border-dark": "#374151",
+                        "heading-dark": "#F9FAFB",
+                        "body-dark": "#D1D5DB"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-body-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-border-dark/50 bg-background-dark/80 backdrop-blur-lg">
+<div class="flex w-full max-w-6xl items-center justify-between whitespace-nowrap px-6 py-4">
+<a class="flex items-center gap-3 text-heading-dark" href="#">
+<div class="h-6 w-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold">Craftcodex</h2>
+</a>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-body-dark transition-colors hover:text-heading-dark" href="#services">Services</a>
+<a class="text-sm font-medium text-body-dark transition-colors hover:text-heading-dark" href="#process">Process</a>
+<a class="text-sm font-medium text-body-dark transition-colors hover:text-heading-dark" href="#portfolio">Portfolio</a>
+<a class="text-sm font-medium text-body-dark transition-colors hover:text-heading-dark" href="#team">Team</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-sm font-bold text-white transition-opacity hover:opacity-90">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center">
+<div class="w-full max-w-6xl px-6">
+<!-- HeroSection -->
+<section class="flex min-h-[calc(100vh-80px)] items-center justify-center py-20 text-center">
+<div class="relative w-full">
+<div class="absolute inset-0 -m-48 mx-auto h-[500px] w-[500px] rounded-full bg-primary/20 blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<h1 class="text-5xl font-black leading-tight tracking-tighter text-heading-dark md:text-7xl">We Build Exceptional Software</h1>
+<p class="max-w-2xl text-lg text-body-dark md:text-xl">Crafting modern, user-centric solutions to elevate your business and delight your customers.</p>
+<div class="mt-4 flex flex-wrap justify-center gap-4">
+<button class="flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-white transition-opacity hover:opacity-90">
+<span class="truncate">Request a Quote</span>
+</button>
+<button class="flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-border-dark bg-card-dark px-6 text-base font-bold text-heading-dark transition-colors hover:bg-border-dark">
+<span class="truncate">See Our Services</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FeatureSection -->
+<section class="py-20" id="why-us">
+<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Why Choose Craftcodex?</h2>
+<p class="max-w-3xl text-lg text-body-dark">We combine expert engineering with user-centric design and agile methodology to deliver outstanding results that drive growth.</p>
+</div>
+<div class="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-border-dark bg-card-dark p-6">
+<span class="material-symbols-outlined text-3xl text-primary">code</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-heading-dark">Expert Engineering</h3>
+<p class="text-body-dark">Leveraging the latest technologies to build robust and scalable software solutions that stand the test of time.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-border-dark bg-card-dark p-6">
+<span class="material-symbols-outlined text-3xl text-primary">design_services</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-heading-dark">User-Centric Design</h3>
+<p class="text-body-dark">Creating intuitive and engaging experiences that delight your users and solve real-world problems effectively.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-lg border border-border-dark bg-card-dark p-6">
+<span class="material-symbols-outlined text-3xl text-primary">sync</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-heading-dark">Agile Methodology</h3>
+<p class="text-body-dark">Our iterative approach ensures flexibility, transparency, and timely delivery, keeping you involved every step of the way.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-20" id="services">
+<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Our Services</h2>
+<p class="max-w-3xl text-lg text-body-dark">From concept to launch, we provide the expertise you need to succeed in the digital landscape.</p>
+</div>
+<div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col gap-3 rounded-lg border border-border-dark bg-card-dark p-6">
+<div class="w-full rounded-lg bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract gradient representing web app development" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUsYwNu8NcVdRzvBn2vaf29JYr-2hUNw22OxMRVLVFVbKVgud56OycETQyZBCW0QwN9Jj04-CLrXfS5tokTt3sTxtyvxeXzamV9LL1HSBCGwjz58rHXylUEuy4oHjwN50WnQfxp2dKA0pGzCJfS6ljgMO7VcbdH6SqqcBXSAV_S3v0nvPbdyLbKqu_CudnMsm3Z8nnemyfoRC2jHGQUGqIdzhoqXW3JLlwu2-kC2_LM-2seougHsJmpxAvomLviXnbru3MHFbhoQ");'></div>
+<div>
+<h3 class="text-lg font-semibold text-heading-dark">Web App Development</h3>
+<p class="mt-1 text-sm text-body-dark">Building powerful and responsive web applications for any platform.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg border border-border-dark bg-card-dark p-6">
+<div class="w-full rounded-lg bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract gradient representing mobile app development" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNDTwkoOo1xm_KsJ4xsvr4pRtUoXI_b0Dxj_Ax6wXOR-USH-BVKJsweVShQhy-PkN1EqlZWF3mqmD9bsFtebRwgNVv3Tj7NZUXR7Gk0UjWWhWEZrwfu-yzgvoqNFXKFosBeMxSp1lSnDzfe6VHdQWeUBWiEuIkXMdNJ7kQ6DGjfuknYNyJqNiJmXAwl1SJ3IAdgwqfkPBfzi59lq5YHS6X57UiotASY99ZwPwAKOpa8zroQ_0FUz9hvcyrZSqUTLrO_6BkwBE5tQ");'></div>
+<div>
+<h3 class="text-lg font-semibold text-heading-dark">Mobile App Development</h3>
+<p class="mt-1 text-sm text-body-dark">Creating seamless native and cross-platform mobile experiences.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg border border-border-dark bg-card-dark p-6">
+<div class="w-full rounded-lg bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract gradient representing UI/UX design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQ6ZG_wNWHfWJIt8kpOD9Faoi1e82iRRGnYOwf4JautKrrUkOjPttGlXo_pUad3ayNO4sXXFR6sMUjlDI_zBRNcSjO3w68ORGEQgJIna19oBJYkOIHawA0TSN3onC2rMCHJmT8Ncq5YPpCb-CNmN8L6Sl7qGwOxmcNYhlWsePJDU37dXyO525eQiXXC_i2Bh2rkqDIiZwpdLHN_5BWgeH3BMzJi5la9pf_7l7R4odDHYq-yBiJZlaVrxTeWYXjd2rdRrN38CARnA");'></div>
+<div>
+<h3 class="text-lg font-semibold text-heading-dark">UI/UX Design</h3>
+<p class="mt-1 text-sm text-body-dark">Designing beautiful interfaces that are intuitive and easy to use.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-lg border border-border-dark bg-card-dark p-6">
+<div class="w-full rounded-lg bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract gradient representing cloud solutions" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvOUsjJ02bYGa8i1Zr-3TbP4oT5x8wuXH-fXkc5Az9iQ123ENihVqhCdQWFGaSV5CvAF_ai1NcA-UCtkHDqSxVJeJBbubP469T0mJKRM9VZvRdnyNIFe0jUIRLINUDxMUGMFY92BQupPd1r0fwIyUFb73G32hG_LtDaiEgD2RpTRDfMK3Pr06GTH6Q0d4Pa8rIxOdqDoXrhd4JQ9lgtxa_6W5su4KDmDys3Hgr_rVUZiIaeaOw9D3Lhbt_BO05gK2u6L_dSxgDow");'></div>
+<div>
+<h3 class="text-lg font-semibold text-heading-dark">Cloud Solutions</h3>
+<p class="mt-1 text-sm text-body-dark">Deploying scalable and secure cloud infrastructure to support your growth.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="py-20" id="process">
+<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Our 4-Step Path to Success</h2>
+<p class="max-w-3xl text-lg text-body-dark">A structured and transparent process ensures your project is delivered on time, on budget, and to the highest standard.</p>
+</div>
+<div class="relative w-full">
+<div class="absolute left-1/2 top-4 hidden h-full w-0.5 -translate-x-1/2 bg-border-dark md:block"></div>
+<div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+<!-- Step 1 -->
+<div class="flex items-start gap-6">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 border-primary bg-card-dark text-xl font-bold text-primary">01</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">Discovery &amp; Strategy</h3>
+<p class="mt-2 text-body-dark">We start by understanding your vision, goals, and audience to create a comprehensive project roadmap and strategy for success.</p>
+</div>
+</div>
+<div></div>
+<!-- Step 2 -->
+<div></div>
+<div class="flex items-start gap-6">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 border-primary bg-card-dark text-xl font-bold text-primary">02</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">Design &amp; Prototyping</h3>
+<p class="mt-2 text-body-dark">Our designers create wireframes, mockups, and interactive prototypes to visualize the user experience before a single line of code is written.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-6">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 border-primary bg-card-dark text-xl font-bold text-primary">03</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">Development &amp; Testing</h3>
+<p class="mt-2 text-body-dark">Our engineers build your product using agile sprints, followed by rigorous testing to ensure a high-quality, bug-free launch.</p>
+</div>
+</div>
+<div></div>
+<!-- Step 4 -->
+<div></div>
+<div class="flex items-start gap-6">
+<div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 border-primary bg-card-dark text-xl font-bold text-primary">04</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">Deployment &amp; Support</h3>
+<p class="mt-2 text-body-dark">We handle the launch process and provide ongoing support and maintenance to ensure your application runs smoothly and scales with your business.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Teaser -->
+<section class="py-20" id="portfolio">
+<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Featured Work</h2>
+<p class="max-w-3xl text-lg text-body-dark">Explore some of the innovative solutions we've crafted for our clients.</p>
+</div>
+<div class="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
+<div class="flex flex-col gap-4 group">
+<div class="w-full overflow-hidden rounded-lg bg-card-dark">
+<div class="aspect-video w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Project thumbnail for a financial analytics dashboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALu_4Glcf-yVnqlhw8mGlo-ammd5UyLE96bKLoK8ncuc_YS9psJv4bsMYuRLmZpGI8XORwRp3Ds-JAn3n35bDarKWmr-cpb37suBS_adAno0Vd9LzE-PlteEHq13vyh5YkiAfJzftmL1hte7EO6mYANpzVsN5aIskXfX-kHu1YMtnBbcojX2FgYfcghI_RP0qM-w2ABwLRXiq-fUjpy41vIpyyp9A8z-1PTKXHa5hglRDX_uc4drzze4wRNGKgbenj64oRAWHE-A");'></div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">Fintech Analytics Platform</h3>
+<p class="mt-1 text-body-dark">A powerful web application for real-time financial data visualization and analysis.</p>
+<a class="mt-3 inline-block font-semibold text-primary" href="#">View Case Study →</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="w-full overflow-hidden rounded-lg bg-card-dark">
+<div class="aspect-video w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Project thumbnail for a mobile e-commerce app" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsfp6MCCMSxJLpSyALZX_rbXiq_UZX8WkhRRfW1L32vBQP02_6nTyub9ogusjIYzYCM88CbH1eJHsl2revB9Iqn1VgW3jWFxmi0SaVQVnqO8VjEdOzXGLT8ah8SF3U_nAeDRoJzERrUCWHWt3f7ajEJTp1ITe0FBPpS5GOzCN_W4fycg5DeK3ApFWkas4NSKWdrglhgmUKLhB953NvWJIjxnD9kxKPrbSjMB4sb7HDT6vmyU-RXRTmRqWLnaQhinDEWMjxodhDgQ");'></div>
+</div>
+<div>
+<h3 class="text-xl font-bold text-heading-dark">E-commerce Mobile App</h3>
+<p class="mt-1 text-body-dark">A cross-platform mobile app designed to provide a seamless shopping experience.</p>
+<a class="mt-3 inline-block font-semibold text-primary" href="#">View Case Study →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-20" id="team">
+<div class="flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Meet the Artisans</h2>
+<p class="max-w-3xl text-lg text-body-dark">We are a passionate team of designers, developers, and strategists dedicated to crafting exceptional digital products.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+<div class="flex flex-col items-center text-center">
+<img alt="Portrait of Jane Doe" class="h-24 w-24 rounded-full bg-border-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp2DY4PkypS_G62MWMSNPYafD0Xj4JgFRU3oaB3ECRK7Cbzjpby8WkCK5tMXfRNS-3Tu31X-bxtmdM-JsMv_vnI-ga6RMWKdoyQPoZfqOoDld_2cqBOWtaWcfJ5P-0VxVOFwmhUoOmGK3n93TmWJNJE1BWyQkKoDFdNmH524LXua3jfVOVYR9LQtrAjzNU2WqU1V4qTQU-72JtQfRc9kPdGpuFUf5gi4x-pLplJEywFlf8yJtEHBzkeC5gCF7YZbAyhIVLjcGe1g"/>
+<h4 class="mt-4 font-bold text-heading-dark">Jane Doe</h4>
+<p class="text-sm text-body-dark">Lead Engineer</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<img alt="Portrait of John Smith" class="h-24 w-24 rounded-full bg-border-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzGStrnQEvOx2dsxUdLY4WM_ySt7jnTSe2UNsA207HnjridHqQ6XntLd7K4v4SJ095WQLNYZIf8iU5yn6-al-SBPwA-AeUepqOeNj-E4obx0af03wIhHtaUEGC5_JnOuEU3BtMRLITkKTjtkxA64yqaE4oRXQ0NOyrFu3wCZWExyMkr1IGxDBczKnDkLC-qsT_Gs4iNguspm507cibIvaX9evG2TWRfXmC0_alTTnJNwHBXo8F9gVMJsyeuhepxC0kzXDMfp-8Kg"/>
+<h4 class="mt-4 font-bold text-heading-dark">John Smith</h4>
+<p class="text-sm text-body-dark">Product Designer</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<img alt="Portrait of Emily White" class="h-24 w-24 rounded-full bg-border-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbe_6gpY_VRIAGWERRVtHAgYaume2HEgPjI_pnFg-uwn-Af6nyfRFZxFijfRJnT2nPNfFuzGcK__OlEp6PojWrNNVWUHOnD9zD_xXCZNcHcVfOc87IsL1CZ1LKvOuqR6rZrV6Bx1-JhA_Wa10OuQ968iwuEsb3PNt--cc63uNE_TgkMLPsVVQkB4wRL-PEgfQZLfE9mynKvHE0380Y6QrMJ3ER0AKQYDiVMVVPAIHH48hzadXlAUeT9GDgnzzvwu-WMDPQbtVCHw"/>
+<h4 class="mt-4 font-bold text-heading-dark">Emily White</h4>
+<p class="text-sm text-body-dark">Project Manager</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<img alt="Portrait of Michael Brown" class="h-24 w-24 rounded-full bg-border-dark object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe_tFpu64I0V7ilqUuUjnbx5viPTWi37pHur1Bi1h_UGWQlfowxGW3Rww9jpe-yMldB6zHN1A3983UsslEeBkANUXma_JFaoLegyOdesNVV67Fli7UNFSv2dhBJODGm3TmWJMKHvER9U8qqc5cfW8MK94icZHZHKr0EKbWR9cErPSCd3fBgXBSzfq9ex-v0-bgDlLiU1fmH_mLtu9KVvuFVpr3FVPGT-rhgjQ7GcCoF9JkzzjlxyfZXO8Y4rjOpjJygtDTLtthVA"/>
+<h4 class="mt-4 font-bold text-heading-dark">Michael Brown</h4>
+<p class="text-sm text-body-dark">Frontend Developer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20">
+<div class="rounded-lg bg-card-dark p-10 text-center">
+<h2 class="text-4xl font-bold tracking-tight text-heading-dark">Ready to build something amazing?</h2>
+<p class="mx-auto mt-4 max-w-2xl text-lg text-body-dark">Let's turn your idea into a reality. Get in touch with us today to discuss your project.</p>
+<button class="mt-8 flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-white transition-opacity hover:opacity-90 mx-auto">
+<span class="truncate">Start Your Project</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+</div>
+</body></html>
