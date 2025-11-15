@@ -1,3 +1,5 @@
+import LanguageSwitcher from './LanguageSwitcher';
+
 const Navbar = () => {
   return (
     <nav className="bg-gray-200 dark:bg-gray-800 p-4">
@@ -8,6 +10,7 @@ const Navbar = () => {
           <a href="/services" className="mx-2">Services</a>
           <a href="/portfolio" className="mx-2">Portfolio</a>
           <a href="/contact" className="mx-2">Contact</a>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>
