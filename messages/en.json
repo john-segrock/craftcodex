@@ -2,6 +2,28 @@
   "Index": {
     "title": "Hello World!"
   },
+  "ProcessPage": {
+    "title": "Our Process"
+  },
+  "Navbar": {
+    "hem": "Home",
+    "services": "Services",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "ctaButton": "Get a Quote"
+  },
+  "Footer": {
+    "description": "We build modern web and app solutions for businesses that want to grow digitally.",
+    "quickLinks": "Quick Links",
+    "hem": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "connect": "Connect With Us",
+    "copyright": "Craftcodex. All rights reserved."
+  },
   "Hero": {
     "title": "We build modern web & app solutions for businesses that want to grow digitally.",
     "subtitle": "Craftcodex helps startups, small businesses, and individuals take their ideas from sketch to finished product – websites, apps, and custom systems.",
