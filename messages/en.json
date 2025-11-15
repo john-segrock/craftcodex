@@ -1,0 +1,105 @@
+{
+  "Index": {
+    "title": "Hello World!"
+  },
+  "Hero": {
+    "title": "We build modern web & app solutions for businesses that want to grow digitally.",
+    "subtitle": "Craftcodex helps startups, small businesses, and individuals take their ideas from sketch to finished product – websites, apps, and custom systems.",
+    "cta_primary": "Request a quote",
+    "cta_secondary": "See our services"
+  },
+  "ValueProposition": {
+    "title": "Why Choose Craftcodex?",
+    "card1_title": "Holistic Solutions",
+    "card1_description": "From idea, design, and backend to hosting & support.",
+    "card2_title": "Modern Tech Stack",
+    "card2_description": "React, Next.js, Java, Spring, Flutter, etc.",
+    "card3_title": "Personal Contact",
+    "card3_description": "You talk directly to the developers, no middlemen."
+  },
+  "Services": {
+    "title": "What we help you with",
+    "service1_title": "Websites & Web Apps",
+    "service1_description": "Corporate sites, booking systems, dashboards, e-commerce.",
+    "service2_title": "Mobile Apps (iOS & Android)",
+    "service2_description": "Flutter / React Native, integrated with existing systems.",
+    "service3_title": "Custom Systems",
+    "service3_description": "Internal tools, integrations, automation, APIs."
+  },
+  "Process": {
+    "title": "How it works",
+    "step1_title": "First call",
+    "step1_description": "We listen to your idea and needs.",
+    "step2_title": "Proposal & quote",
+    "step2_description": "We develop a solution, timeline, and price.",
+    "step3_title": "Development & feedback",
+    "step3_description": "We build, and you see partial results.",
+    "step4_title": "Launch & support",
+    "step4_description": "We help deploy and provide aftercare."
+  },
+  "Portfolio": {
+    "title": "Projects we are proud of",
+    "project1_title": "Booking portal for a service company",
+    "project1_description": "Web app for booking, customer management, and admin panel.",
+    "project2_title": "KPI dashboard for internal monitoring",
+    "project2_description": "Dashboard with real-time data, graphs, and role-based login.",
+    "project3_title": "Community app for members",
+    "project3_description": "Mobile app for news, push notifications, member profiles, and login."
+  },
+  "Team": {
+    "title": "The Team Behind Craftcodex",
+    "member1_name": "John Doe",
+    "member1_role": "Fullstack Developer",
+    "member2_name": "Jane Doe",
+    "member2_role": "Fullstack Developer",
+    "member3_name": "Peter Jones",
+    "member3_role": "Fullstack Developer"
+  },
+  "Cta": {
+    "title": "Ready to take the next step with your idea?",
+    "subtitle": "Briefly tell us what you want to build, and we'll quickly get back to you with a proposal.",
+    "cta_button": "Request a quote"
+  },
+  "About": {
+    "title": "About Craftcodex",
+    "intro": "We are two developers who believe in simplicity, quality, and honesty in every line of code. Craftcodex was born out of a desire to build software that makes a difference — not just technically impressive, but genuinely solves problems.",
+    "vision_title": "Our Vision",
+    "vision_description": "We want to be a partner that makes technology accessible, understandable, and useful. For us, development is not about stacking buzzwords, but about building solutions that last, are secure, and can grow with you.",
+    "process_title": "Our Way of Working",
+    "process_description": "At Craftcodex, we combine business understanding with technical expertise. We believe in close dialogue, clarity, and responsibility. You talk directly to us who build your solution — no middlemen, no surprises."
+  },
+  "ServicesPage": {
+    "title": "Our Services",
+    "service1_title": "Websites & Web Apps",
+    "service1_description": "We build modern, responsive websites and web apps that work just as well on mobile as on desktop. Everything from informational sites and landing pages to booking systems, portals, and dashboards.",
+    "service2_title": "Mobile Apps for iOS & Android",
+    "service2_description": "We develop mobile apps with React Native or Flutter, adapted for both iOS and Android. We can connect the app to existing systems, payment solutions, or APIs.",
+    "service3_title": "Custom Systems & Integrations",
+    "service3_description": "When standard solutions are not enough, we build systems that are adapted to your processes. This can be internal tools, dashboards, booking flows, e-commerce, or integrations between different systems.",
+    "service4_title": "Hosting, Operation & Support",
+    "service4_description": "We can take care of the operating environment, monitoring, updates, and troubleshooting. With Docker and modern cloud solutions, we ensure that your app or website is fast, secure, and accessible.",
+    "service5_title": "Consultation & Further Development",
+    "service5_description": "Do you already have a system or a website that needs to be updated, optimized, or further developed? We can step in as a development partner, do a code review, or take responsibility for further development."
+  },
+  "PortfolioPage": {
+    "title": "Our Portfolio",
+    "project1_title": "Booking portal for a service company",
+    "project1_description": "Web app for booking, customer management, and admin panel.",
+    "project2_title": "KPI dashboard for internal monitoring",
+    "project2_description": "Dashboard with real-time data, graphs, and role-based login.",
+    "project3_title": "Community app for members",
+    "project3_description": "Mobile app for news, push notifications, member profiles, and login."
+  },
+  "ContactPage": {
+    "title": "Let's Build Something Great Together",
+    "subtitle": "Tell us about your project, and we'll get back to you within 24 hours.",
+    "form_title": "Project Inquiry",
+    "full_name": "Full Name",
+    "full_name_placeholder": "Jane Doe",
+    "work_email": "Work Email",
+    "work_email_placeholder": "you@company.com",
+    "message": "Tell us about your project...",
+    "message_placeholder": "Describe your goals, timeline, and any specific requirements.",
+    "submit_button": "Send Inquiry"
+  }
+}
