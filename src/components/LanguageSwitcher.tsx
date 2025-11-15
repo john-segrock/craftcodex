@@ -1,24 +1,28 @@
 'use client';
 
-import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { useParams } from 'next/navigation';
 
 const LanguageSwitcher = () => {
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const locale = useLocale();
+  const params = useParams();
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value;
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.replace(newPathname);
+    const nextLocale = e.target.value;
+    // @ts-expect-error -- TypeScript will validate that only known `params`
+    // are used in combination with a given `pathname`. Since the two will
+    // always match for the current route, we can skip runtime checks.
+    router.replace({ pathname, params }, { locale: nextLocale });
   };
 
   return (
     <select
       value={locale}
       onChange={handleLanguageChange}
-      className="bg-slate-200 dark:bg-gray-500 px-4 py-2 rounded-lg absolute right-5 top-12"
+      className="bg-transparent text-white"
     >
       <option value="en">English</option>
       <option value="sv">Svenska</option>
