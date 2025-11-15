@@ -1,105 +1,127 @@
 {
   "Index": {
-    "title": "[sv] Hello World!"
+    "title": "Hej Världen!"
+  },
+  "ProcessPage": {
+    "title": "Vår Process"
+  },
+  "Navbar": {
+    "hem": "Hem",
+    "services": "Tjänster",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "ctaButton": "Få en offert"
+  },
+  "Footer": {
+    "description": "Vi bygger moderna webb- och applösningar för företag som vill växa digitalt.",
+    "quickLinks": "Snabblänkar",
+    "hem": "Hem",
+    "services": "Tjänster",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "connect": "Kontakta oss",
+    "copyright": "Craftcodex. Alla rättigheter förbehållna."
   },
   "Hero": {
-    "title": "[sv] We build modern web & app solutions for businesses that want to grow digitally.",
-    "subtitle": "[sv] Craftcodex helps startups, small businesses, and individuals take their ideas from sketch to finished product – websites, apps, and custom systems.",
-    "cta_primary": "[sv] Request a quote",
-    "cta_secondary": "[sv] See our services"
+    "title": "Vi bygger moderna webb- & applösningar för företag som vill växa digitalt.",
+    "subtitle": "Craftcodex hjälper startups, småföretag och privatpersoner att ta sina idéer från skiss till färdig produkt – webbplatser, appar och anpassade system.",
+    "cta_primary": "Begär en offert",
+    "cta_secondary": "Se våra tjänster"
   },
   "ValueProposition": {
-    "title": "[sv] Why Choose Craftcodex?",
-    "card1_title": "[sv] Holistic Solutions",
-    "card1_description": "[sv] From idea, design, and backend to hosting & support.",
-    "card2_title": "[sv] Modern Tech Stack",
-    "card2_description": "[sv] React, Next.js, Java, Spring, Flutter, etc.",
-    "card3_title": "[sv] Personal Contact",
-    "card3_description": "[sv] You talk directly to the developers, no middlemen."
+    "title": "Varför välja Craftcodex?",
+    "card1_title": "Helhetslösningar",
+    "card1_description": "Från idé, design och backend till hosting & support.",
+    "card2_title": "Modern Teknikstack",
+    "card2_description": "React, Next.js, Java, Spring, Flutter, etc.",
+    "card3_title": "Personlig Kontakt",
+    "card3_description": "Du pratar direkt med utvecklarna, inga mellanhänder."
   },
   "Services": {
-    "title": "[sv] What we help you with",
-    "service1_title": "[sv] Websites & Web Apps",
-    "service1_description": "[sv] Corporate sites, booking systems, dashboards, e-commerce.",
-    "service2_title": "[sv] Mobile Apps (iOS & Android)",
-    "service2_description": "[sv] Flutter / React Native, integrated with existing systems.",
-    "service3_title": "[sv] Custom Systems",
-    "service3_description": "[sv] Internal tools, integrations, automation, APIs."
+    "title": "Vad vi hjälper dig med",
+    "service1_title": "Webbplatser & Webbappar",
+    "service1_description": "Företagssidor, bokningssystem, instrumentpaneler, e-handel.",
+    "service2_title": "Mobilappar (iOS & Android)",
+    "service2_description": "Flutter / React Native, integrerat med befintliga system.",
+    "service3_title": "Anpassade System",
+    "service3_description": "Interna verktyg, integrationer, automation, API:er."
   },
   "Process": {
-    "title": "[sv] How it works",
-    "step1_title": "[sv] First call",
-    "step1_description": "[sv] We listen to your idea and needs.",
-    "step2_title": "[sv] Proposal & quote",
-    "step2_description": "[sv] We develop a solution, timeline, and price.",
-    "step3_title": "[sv] Development & feedback",
-    "step3_description": "[sv] We build, and you see partial results.",
-    "step4_title": "[sv] Launch & support",
-    "step4_description": "[sv] We help deploy and provide aftercare."
+    "title": "Hur det fungerar",
+    "step1_title": "Första samtalet",
+    "step1_description": "Vi lyssnar på din idé och dina behov.",
+    "step2_title": "Förslag & offert",
+    "step2_description": "Vi tar fram en lösning, tidslinje och pris.",
+    "step3_title": "Utveckling & feedback",
+    "step3_description": "Vi bygger, och du ser delresultat.",
+    "step4_title": "Lansering & support",
+    "step4_description": "Vi hjälper till med driftsättning och eftervård."
   },
   "Portfolio": {
-    "title": "[sv] Projects we are proud of",
-    "project1_title": "[sv] Booking portal for a service company",
-    "project1_description": "[sv] Web app for booking, customer management, and admin panel.",
-    "project2_title": "[sv] KPI dashboard for internal monitoring",
-    "project2_description": "[sv] Dashboard with real-time data, graphs, and role-based login.",
-    "project3_title": "[sv] Community app for members",
-    "project3_description": "[sv] Mobile app for news, push notifications, member profiles, and login."
+    "title": "Projekt vi är stolta över",
+    "project1_title": "Bokningsportal för ett tjänsteföretag",
+    "project1_description": "Webbapp för bokning, kundhantering och adminpanel.",
+    "project2_title": "KPI-instrumentpanel för intern övervakning",
+    "project2_description": "Instrumentpanel med realtidsdata, grafer och rollbaserad inloggning.",
+    "project3_title": "Gemenskapssapp för medlemmar",
+    "project3_description": "Mobilapp för nyheter, push-notiser, medlemsprofiler och inloggning."
   },
   "Team": {
-    "title": "[sv] The Team Behind Craftcodex",
-    "member1_name": "[sv] John Doe",
-    "member1_role": "[sv] Fullstack Developer",
-    "member2_name": "[sv] Jane Doe",
-    "member2_role": "[sv] Fullstack Developer",
-    "member3_name": "[sv] Peter Jones",
-    "member3_role": "[sv] Fullstack Developer"
+    "title": "Teamet bakom Craftcodex",
+    "member1_name": "John Doe",
+    "member1_role": "Fullstack-utvecklare",
+    "member2_name": "Jane Doe",
+    "member2_role": "Fullstack-utvecklare",
+    "member3_name": "Peter Jones",
+    "member3_role": "Fullstack-utvecklare"
   },
   "Cta": {
-    "title": "[sv] Ready to take the next step with your idea?",
-    "subtitle": "[sv] Briefly tell us what you want to build, and we'll quickly get back to you with a proposal.",
-    "cta_button": "[sv] Request a quote"
+    "title": "Redo att ta nästa steg med din idé?",
+    "subtitle": "Berätta kort vad du vill bygga, så återkommer vi snabbt med ett förslag.",
+    "cta_button": "Begär en offert"
   },
   "About": {
-    "title": "[sv] About Craftcodex",
-    "intro": "[sv] We are two developers who believe in simplicity, quality, and honesty in every line of code. Craftcodex was born out of a desire to build software that makes a difference — not just technically impressive, but genuinely solves problems.",
-    "vision_title": "[sv] Our Vision",
-    "vision_description": "[sv] We want to be a partner that makes technology accessible, understandable, and useful. For us, development is not about stacking buzzwords, but about building solutions that last, are secure, and can grow with you.",
-    "process_title": "[sv] Our Way of Working",
-    "process_description": "[sv] At Craftcodex, we combine business understanding with technical expertise. We believe in close dialogue, clarity, and responsibility. You talk directly to us who build your solution — no middlemen, no surprises."
+    "title": "Om Craftcodex",
+    "intro": "Vi är två utvecklare som tror på enkelhet, kvalitet och ärlighet i varje kodrad. Craftcodex föddes ur en önskan att bygga programvara som gör skillnad – inte bara tekniskt imponerande, utan som genuint löser problem.",
+    "vision_title": "Vår Vision",
+    "vision_description": "Vi vill vara en partner som gör teknik tillgänglig, begriplig och användbar. För oss handlar utveckling inte om att stapla buzzwords, utan om att bygga lösningar som håller, är säkra och kan växa med dig.",
+    "process_title": "Vårt Arbetssätt",
+    "process_description": "På Craftcodex kombinerar vi affärsförståelse med teknisk expertis. Vi tror på nära dialog, tydlighet och ansvar. Du pratar direkt med oss som bygger din lösning – inga mellanhänder, inga överraskningar."
   },
   "ServicesPage": {
-    "title": "[sv] Our Services",
-    "service1_title": "[sv] Websites & Web Apps",
-    "service1_description": "[sv] We build modern, responsive websites and web apps that work just as well on mobile as on desktop. Everything from informational sites and landing pages to booking systems, portals, and dashboards.",
-    "service2_title": "[sv] Mobile Apps for iOS & Android",
-    "service2_description": "[sv] We develop mobile apps with React Native or Flutter, adapted for both iOS and Android. We can connect the app to existing systems, payment solutions, or APIs.",
-    "service3_title": "[sv] Custom Systems & Integrations",
-    "service3_description": "[sv] When standard solutions are not enough, we build systems that are adapted to your processes. This can be internal tools, dashboards, booking flows, e-commerce, or integrations between different systems.",
-    "service4_title": "[sv] Hosting, Operation & Support",
-    "service4_description": "[sv] We can take care of the operating environment, monitoring, updates, and troubleshooting. With Docker and modern cloud solutions, we ensure that your app or website is fast, secure, and accessible.",
-    "service5_title": "[sv] Consultation & Further Development",
-    "service5_description": "[sv] Do you already have a system or a website that needs to be updated, optimized, or further developed? We can step in as a development partner, do a code review, or take responsibility for further development."
+    "title": "Våra Tjänster",
+    "service1_title": "Webbplatser & Webbappar",
+    "service1_description": "Vi bygger moderna, responsiva webbplatser och webbappar som fungerar lika bra på mobilen som på datorn. Allt från informationssidor och landningssidor till bokningssystem, portaler och instrumentpaneler.",
+    "service2_title": "Mobilappar för iOS & Android",
+    "service2_description": "Vi utvecklar mobilappar med React Native eller Flutter, anpassade för både iOS och Android. Vi kan koppla appen till befintliga system, betallösningar eller API:er.",
+    "service3_title": "Anpassade System & Integrationer",
+    "service3_description": "När standardlösningar inte räcker till bygger vi system som är anpassade efter dina processer. Det kan handla om interna verktyg, instrumentpaneler, bokningsflöden, e-handel eller integrationer mellan olika system.",
+    "service4_title": "Hosting, Drift & Support",
+    "service4_description": "Vi kan ta hand om driftmiljön, övervakning, uppdateringar och felsökning. Med Docker och moderna molnlösningar ser vi till att din app eller webbplats är snabb, säker och tillgänglig.",
+    "service5_title": "Konsultation & Vidareutveckling",
+    "service5_description": "Har du redan ett system eller en webbplats som behöver uppdateras, optimeras eller vidareutvecklas? Vi kan kliva in som utvecklingspartner, göra en kodgranskning eller ta ansvar för vidareutvecklingen."
   },
   "PortfolioPage": {
-    "title": "[sv] Our Portfolio",
-    "project1_title": "[sv] Booking portal for a service company",
-    "project1_description": "[sv] Web app for booking, customer management, and admin panel.",
-    "project2_title": "[sv] KPI dashboard for internal monitoring",
-    "project2_description": "[sv] Dashboard with real-time data, graphs, and role-based login.",
-    "project3_title": "[sv] Community app for members",
-    "project3_description": "[sv] Mobile app for news, push notifications, member profiles, and login."
+    "title": "Vår Portfolio",
+    "project1_title": "Bokningsportal för ett tjänsteföretag",
+    "project1_description": "Webbapp för bokning, kundhantering och adminpanel.",
+    "project2_title": "KPI-instrumentpanel för intern övervakning",
+    "project2_description": "Instrumentpanel med realtidsdata, grafer och rollbaserad inloggning.",
+    "project3_title": "Gemenskapssapp för medlemmar",
+    "project3_description": "Mobilapp för nyheter, push-notiser, medlemsprofiler och inloggning."
   },
   "ContactPage": {
-    "title": "[sv] Let's Build Something Great Together",
-    "subtitle": "[sv] Tell us about your project, and we'll get back to you within 24 hours.",
-    "form_title": "[sv] Project Inquiry",
-    "full_name": "[sv] Full Name",
-    "full_name_placeholder": "[sv] Jane Doe",
-    "work_email": "[sv] Work Email",
-    "work_email_placeholder": "[sv] you@company.com",
-    "message": "[sv] Tell us about your project...",
-    "message_placeholder": "[sv] Describe your goals, timeline, and any specific requirements.",
-    "submit_button": "[sv] Send Inquiry"
+    "title": "Låt oss bygga något fantastiskt tillsammans",
+    "subtitle": "Berätta om ditt projekt, så återkommer vi inom 24 timmar.",
+    "form_title": "Projektförfrågan",
+    "full_name": "Fullständigt Namn",
+    "full_name_placeholder": "Jane Doe",
+    "work_email": "Jobbmail",
+    "work_email_placeholder": "du@foretag.com",
+    "message": "Berätta om ditt projekt...",
+    "message_placeholder": "Beskriv dina mål, tidslinje och eventuella specifika krav.",
+    "submit_button": "Skicka Förfrågan"
   }
 }
