@@ -1,105 +1,124 @@
 {
   "Index": {
-    "title": "[ar] Hello World!"
+    "title": "مرحبا بالعالم!"
+  },
+  "Navbar": {
+    "hem": "الرئيسية",
+    "services": "الخدمات",
+    "process": "العملية",
+    "portfolio": "المعرض",
+    "about": "حولنا",
+    "contact": "اتصل بنا",
+    "ctaButton": "اطلب عرض سعر"
+  },
+  "Footer": {
+    "description": "نقوم ببناء حلول ويب وتطبيقات حديثة للشركات التي ترغب في النمو رقمياً.",
+    "quickLinks": "روابط سريعة",
+    "hem": "الرئيسية",
+    "services": "الخدمات",
+    "portfolio": "المعرض",
+    "contact": "اتصل بنا",
+    "connect": "تواصل معنا",
+    "copyright": "كرافت كودكس. جميع الحقوق محفوظة."
   },
   "Hero": {
-    "title": "[ar] We build modern web & app solutions for businesses that want to grow digitally.",
-    "subtitle": "[ar] Craftcodex helps startups, small businesses, and individuals take their ideas from sketch to finished product – websites, apps, and custom systems.",
-    "cta_primary": "[ar] Request a quote",
-    "cta_secondary": "[ar] See our services"
+    "title": "نقوم ببناء حلول ويب وتطبيقات حديثة للشركات التي ترغب في النمو رقمياً.",
+    "subtitle": "تساعد Craftcodex الشركات الناشئة والشركات الصغيرة والأفراد على نقل أفكارهم من الرسم إلى المنتج النهائي - مواقع الويب والتطبيقات والأنظمة المخصصة.",
+    "cta_primary": "اطلب عرض سعر",
+    "cta_secondary": "اطلع على خدماتنا"
   },
   "ValueProposition": {
-    "title": "[ar] Why Choose Craftcodex?",
-    "card1_title": "[ar] Holistic Solutions",
-    "card1_description": "[ar] From idea, design, and backend to hosting & support.",
-    "card2_title": "[ar] Modern Tech Stack",
-    "card2_description": "[ar] React, Next.js, Java, Spring, Flutter, etc.",
-    "card3_title": "[ar] Personal Contact",
-    "card3_description": "[ar] You talk directly to the developers, no middlemen."
+    "title": "لماذا تختار Craftcodex؟",
+    "card1_title": "حلول شاملة",
+    "card1_description": "من الفكرة والتصميم والخلفية إلى الاستضافة والدعم.",
+    "card2_title": "مجموعة تقنية حديثة",
+    "card2_description": "React, Next.js, Java, Spring, Flutter, إلخ.",
+    "card3_title": "اتصال شخصي",
+    "card3_description": "أنت تتحدث مباشرة إلى المطورين ، لا وسطاء."
   },
   "Services": {
-    "title": "[ar] What we help you with",
-    "service1_title": "[ar] Websites & Web Apps",
-    "service1_description": "[ar] Corporate sites, booking systems, dashboards, e-commerce.",
-    "service2_title": "[ar] Mobile Apps (iOS & Android)",
-    "service2_description": "[ar] Flutter / React Native, integrated with existing systems.",
-    "service3_title": "[ar] Custom Systems",
-    "service3_description": "[ar] Internal tools, integrations, automation, APIs."
+    "title": "بماذا نساعدك",
+    "service1_title": "مواقع الويب وتطبيقات الويب",
+    "service1_description": "مواقع الشركات وأنظمة الحجز ولوحات المعلومات والتجارة الإلكترونية.",
+    "service2_title": "تطبيقات الجوال (iOS و Android)",
+    "service2_description": "Flutter / React Native ، متكامل مع الأنظمة الحالية.",
+    "service3_title": "أنظمة مخصصة",
+    "service3_description": "أدوات داخلية ، تكامل ، أتمتة ، واجهات برمجة التطبيقات."
   },
   "Process": {
-    "title": "[ar] How it works",
-    "step1_title": "[ar] First call",
-    "step1_description": "[ar] We listen to your idea and needs.",
-    "step2_title": "[ar] Proposal & quote",
-    "step2_description": "[ar] We develop a solution, timeline, and price.",
-    "step3_title": "[ar] Development & feedback",
-    "step3_description": "[ar] We build, and you see partial results.",
-    "step4_title": "[ar] Launch & support",
-    "step4_description": "[ar] We help deploy and provide aftercare."
+    "title": "كيف تعمل",
+    "step1_title": "المكالمة الأولى",
+    "step1_description": "نستمع إلى فكرتك واحتياجاتك.",
+    "step2_title": "اقتراح وعرض أسعار",
+    "step2_description": "نقوم بتطوير حل وجدول زمني وسعر.",
+    "step3_title": "التطوير والملاحظات",
+    "step3_description": "نحن نبني ، وأنت ترى نتائج جزئية.",
+    "step4_title": "الإطلاق والدعم",
+    "step4_description": "نساعد في النشر وتقديم الرعاية اللاحقة."
   },
   "Portfolio": {
-    "title": "[ar] Projects we are proud of",
-    "project1_title": "[ar] Booking portal for a service company",
-    "project1_description": "[ar] Web app for booking, customer management, and admin panel.",
-    "project2_title": "[ar] KPI dashboard for internal monitoring",
-    "project2_description": "[ar] Dashboard with real-time data, graphs, and role-based login.",
-    "project3_title": "[ar] Community app for members",
-    "project3_description": "[ar] Mobile app for news, push notifications, member profiles, and login."
+    "title": "مشاريع نفخر بها",
+    "project1_title": "بوابة حجز لشركة خدمات",
+    "project1_description": "تطبيق ويب للحجز وإدارة العملاء ولوحة الإدارة.",
+    "project2_title": "لوحة معلومات KPI للمراقبة الداخلية",
+    "project2_description": "لوحة معلومات ببيانات في الوقت الفعلي ورسوم بيانية وتسجيل دخول قائم على الأدوار.",
+    "project3_title": "تطبيق مجتمعي للأعضاء",
+    "project3_description": "تطبيق جوال للأخبار والإشعارات الفورية وملفات تعريف الأعضاء وتسجيل الدخول."
   },
   "Team": {
-    "title": "[ar] The Team Behind Craftcodex",
-    "member1_name": "[ar] John Doe",
-    "member1_role": "[ar] Fullstack Developer",
-    "member2_name": "[ar] Jane Doe",
-    "member2_role": "[ar] Fullstack Developer",
-    "member3_name": "[ar] Peter Jones",
-    "member3_role": "[ar] Fullstack Developer"
+    "title": "الفريق الذي يقف وراء Craftcodex",
+    "member1_name": "جون دو",
+    "member1_role": "مطور Fullstack",
+    "member2_name": "جين دو",
+    "member2_role": "مطور Fullstack",
+    "member3_name": "بيتر جونز",
+    "member3_role": "مطور Fullstack"
   },
   "Cta": {
-    "title": "[ar] Ready to take the next step with your idea?",
-    "subtitle": "[ar] Briefly tell us what you want to build, and we'll quickly get back to you with a proposal.",
-    "cta_button": "[ar] Request a quote"
+    "title": "هل أنت مستعد لاتخاذ الخطوة التالية بفكرتك؟",
+    "subtitle": "أخبرنا بإيجاز بما تريد بناءه ، وسنعود إليك بسرعة باقتراح.",
+    "cta_button": "اطلب عرض سعر"
   },
   "About": {
-    "title": "[ar] About Craftcodex",
-    "intro": "[ar] We are two developers who believe in simplicity, quality, and honesty in every line of code. Craftcodex was born out of a desire to build software that makes a difference — not just technically impressive, but genuinely solves problems.",
-    "vision_title": "[ar] Our Vision",
-    "vision_description": "[ar] We want to be a partner that makes technology accessible, understandable, and useful. For us, development is not about stacking buzzwords, but about building solutions that last, are secure, and can grow with you.",
-    "process_title": "[ar] Our Way of Working",
-    "process_description": "[ar] At Craftcodex, we combine business understanding with technical expertise. We believe in close dialogue, clarity, and responsibility. You talk directly to us who build your solution — no middlemen, no surprises."
+    "title": "حول Craftcodex",
+    "intro": "نحن مطوران نؤمن بالبساطة والجودة والصدق في كل سطر من التعليمات البرمجية. ولدت Craftcodex من الرغبة في بناء برامج تحدث فرقًا - ليس فقط مثيرة للإعجاب من الناحية الفنية ، ولكنها تحل المشكلات حقًا.",
+    "vision_title": "رؤيتنا",
+    "vision_description": "نريد أن نكون شريكًا يجعل التكنولوجيا سهلة الوصول ومفهومة ومفيدة. بالنسبة لنا ، لا يتعلق التطوير بتكديس الكلمات الطنانة ، بل يتعلق ببناء حلول تدوم وتكون آمنة ويمكن أن تنمو معك.",
+    "process_title": "طريقتنا في العمل",
+    "process_description": "في Craftcodex ، نجمع بين فهم الأعمال والخبرة الفنية. نحن نؤمن بالحوار الوثيق والوضوح والمسؤولية. أنت تتحدث مباشرة إلينا نحن الذين نبني الحل الخاص بك - لا وسطاء ، لا مفاجآت."
   },
   "ServicesPage": {
-    "title": "[ar] Our Services",
-    "service1_title": "[ar] Websites & Web Apps",
-    "service1_description": "[ar] We build modern, responsive websites and web apps that work just as well on mobile as on desktop. Everything from informational sites and landing pages to booking systems, portals, and dashboards.",
-    "service2_title": "[ar] Mobile Apps for iOS & Android",
-    "service2_description": "[ar] We develop mobile apps with React Native or Flutter, adapted for both iOS and Android. We can connect the app to existing systems, payment solutions, or APIs.",
-    "service3_title": "[ar] Custom Systems & Integrations",
-    "service3_description": "[ar] When standard solutions are not enough, we build systems that are adapted to your processes. This can be internal tools, dashboards, booking flows, e-commerce, or integrations between different systems.",
-    "service4_title": "[ar] Hosting, Operation & Support",
-    "service4_description": "[ar] We can take care of the operating environment, monitoring, updates, and troubleshooting. With Docker and modern cloud solutions, we ensure that your app or website is fast, secure, and accessible.",
-    "service5_title": "[ar] Consultation & Further Development",
-    "service5_description": "[ar] Do you already have a system or a website that needs to be updated, optimized, or further developed? We can step in as a development partner, do a code review, or take responsibility for further development."
+    "title": "خدماتنا",
+    "service1_title": "مواقع الويب وتطبيقات الويب",
+    "service1_description": "نقوم ببناء مواقع ويب وتطبيقات ويب حديثة وسريعة الاستجابة تعمل بشكل جيد على الهاتف المحمول كما تعمل على سطح المكتب. كل شيء بدءًا من المواقع الإعلامية والصفحات المقصودة إلى أنظمة الحجز والبوابات ولوحات المعلومات.",
+    "service2_title": "تطبيقات الجوال لنظامي التشغيل iOS و Android",
+    "service2_description": "نقوم بتطوير تطبيقات الجوال باستخدام React Native أو Flutter ، والمكيفة لكل من iOS و Android. يمكننا توصيل التطبيق بالأنظمة الحالية أو حلول الدفع أو واجهات برمجة التطبيقات.",
+    "service3_title": "الأنظمة المخصصة والتكاملات",
+    "service3_description": "عندما لا تكون الحلول القياسية كافية ، نقوم ببناء أنظمة تتكيف مع عملياتك. يمكن أن تكون هذه أدوات داخلية أو لوحات معلومات أو تدفقات حجز أو تجارة إلكترونية أو تكامل بين أنظمة مختلفة.",
+    "service4_title": "الاستضافة والتشغيل والدعم",
+    "service4_description": "يمكننا الاهتمام ببيئة التشغيل والمراقبة والتحديثات واستكشاف الأخطاء وإصلاحها. باستخدام Docker والحلول السحابية الحديثة ، نضمن أن تطبيقك أو موقع الويب الخاص بك سريع وآمن ويمكن الوصول إليه.",
+    "service5_title": "الاستشارة والتطوير الإضافي",
+    "service5_description": "هل لديك بالفعل نظام أو موقع ويب يحتاج إلى تحديث أو تحسين أو تطوير إضافي؟ يمكننا التدخل كشريك تطوير أو إجراء مراجعة للكود أو تحمل مسؤولية التطوير الإضافي."
   },
   "PortfolioPage": {
-    "title": "[ar] Our Portfolio",
-    "project1_title": "[ar] Booking portal for a service company",
-    "project1_description": "[ar] Web app for booking, customer management, and admin panel.",
-    "project2_title": "[ar] KPI dashboard for internal monitoring",
-    "project2_description": "[ar] Dashboard with real-time data, graphs, and role-based login.",
-    "project3_title": "[ar] Community app for members",
-    "project3_description": "[ar] Mobile app for news, push notifications, member profiles, and login."
+    "title": "معرض أعمالنا",
+    "project1_title": "بوابة حجز لشركة خدمات",
+    "project1_description": "تطبيق ويب للحجز وإدارة العملاء ولوحة الإدارة.",
+    "project2_title": "لوحة معلومات KPI للمراقبة الداخلية",
+    "project2_description": "لوحة معلومات ببيانات في الوقت الفعلي ورسوم بيانية وتسجيل دخول قائم على الأدوار.",
+    "project3_title": "تطبيق مجتمعي للأعضاء",
+    "project3_description": "تطبيق جوال للأخبار والإشعارات الفورية وملفات تعريف الأعضاء وتسجيل الدخول."
   },
   "ContactPage": {
-    "title": "[ar] Let's Build Something Great Together",
-    "subtitle": "[ar] Tell us about your project, and we'll get back to you within 24 hours.",
-    "form_title": "[ar] Project Inquiry",
-    "full_name": "[ar] Full Name",
-    "full_name_placeholder": "[ar] Jane Doe",
-    "work_email": "[ar] Work Email",
-    "work_email_placeholder": "[ar] you@company.com",
-    "message": "[ar] Tell us about your project...",
-    "message_placeholder": "[ar] Describe your goals, timeline, and any specific requirements.",
-    "submit_button": "[ar] Send Inquiry"
+    "title": "دعنا نبني شيئًا رائعًا معًا",
+    "subtitle": "أخبرنا عن مشروعك ، وسنعود إليك في غضون 24 ساعة.",
+    "form_title": "استفسار عن مشروع",
+    "full_name": "الاسم الكامل",
+    "full_name_placeholder": "جين دو",
+    "work_email": "بريد إلكتروني للعمل",
+    "work_email_placeholder": "you@company.com",
+    "message": "أخبرنا عن مشروعك ...",
+    "message_placeholder": "صف أهدافك والجدول الزمني وأي متطلبات محددة.",
+    "submit_button": "إرسال استفسار"
   }
 }
