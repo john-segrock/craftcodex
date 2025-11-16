@@ -1,20 +1,33 @@
-import { useTranslations } from 'next-intl';
 
-const AboutPage = () => {
+'use client';
+
+import { useTranslations } from 'next-intl';
+import Team from '@/components/Team';
+
+export default function AboutPage() {
   const t = useTranslations('About');
 
   return (
-    <div className="container mx-auto py-20">
-      <h1 className="text-4xl font-bold text-center mb-12">{t('title')}</h1>
-      <div className="max-w-3xl mx-auto">
-        <p className="text-lg mb-8">{t('intro')}</p>
-        <h2 className="text-3xl font-bold mb-4">{t('vision_title')}</h2>
-        <p className="mb-8">{t('vision_description')}</p>
-        <h2 className="text-3xl font-bold mb-4">{t('process_title')}</h2>
-        <p className="mb-8">{t('process_description')}</p>
+    <main className="container mx-auto px-4 py-20 text-foreground">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">{t('title')}</h1>
+        <p className="mt-6 text-lg leading-8 text-gray-300">{t('intro')}</p>
       </div>
-    </div>
+      <div className="mt-20">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('vision_title')}</h2>
+            <p className="text-lg leading-8 text-gray-300">{t('vision_description')}</p>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('process_title')}</h2>
+            <p className="text-lg leading-8 text-gray-300">{t('process_description')}</p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20">
+        <Team />
+      </div>
+    </main>
   );
-};
-
-export default AboutPage;
+}

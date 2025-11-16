@@ -2,6 +2,28 @@
   "Index": {
     "title": "Hello World!"
   },
+  "ProcessPage": {
+    "title": "Our Process"
+  },
+  "Navbar": {
+    "hem": "Home",
+    "services": "Services",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "ctaButton": "Get a Quote"
+  },
+  "Footer": {
+    "description": "We build modern web and app solutions for businesses that want to grow digitally.",
+    "quickLinks": "Quick Links",
+    "hem": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "connect": "Connect With Us",
+    "copyright": "Craftcodex. All rights reserved."
+  },
   "Hero": {
     "title": "We build modern web & app solutions for businesses that want to grow digitally.",
     "subtitle": "Craftcodex helps startups, small businesses, and individuals take their ideas from sketch to finished product – websites, apps, and custom systems.",
@@ -70,25 +92,51 @@
   },
   "ServicesPage": {
     "title": "Our Services",
-    "service1_title": "Websites & Web Apps",
-    "service1_description": "We build modern, responsive websites and web apps that work just as well on mobile as on desktop. Everything from informational sites and landing pages to booking systems, portals, and dashboards.",
-    "service2_title": "Mobile Apps for iOS & Android",
-    "service2_description": "We develop mobile apps with React Native or Flutter, adapted for both iOS and Android. We can connect the app to existing systems, payment solutions, or APIs.",
-    "service3_title": "Custom Systems & Integrations",
-    "service3_description": "When standard solutions are not enough, we build systems that are adapted to your processes. This can be internal tools, dashboards, booking flows, e-commerce, or integrations between different systems.",
-    "service4_title": "Hosting, Operation & Support",
-    "service4_description": "We can take care of the operating environment, monitoring, updates, and troubleshooting. With Docker and modern cloud solutions, we ensure that your app or website is fast, secure, and accessible.",
-    "service5_title": "Consultation & Further Development",
-    "service5_description": "Do you already have a system or a website that needs to be updated, optimized, or further developed? We can step in as a development partner, do a code review, or take responsibility for further development."
+    "intro": "We help you go from idea to finished solution—whether it's a simple website, a mobile app, or a custom system. Here's an overview of what we can help you with.",
+    "service1": {
+      "title": "Websites & Web Apps",
+      "description": "We build modern, responsive websites and web apps that work just as well on mobile as on desktop. Everything from informational sites and landing pages to booking systems, portals, and dashboards."
+    },
+    "service2": {
+      "title": "Mobile Apps for iOS & Android",
+      "description": "We develop mobile apps with React Native or Flutter, adapted for both iOS and Android. We can connect the app to existing systems, payment solutions, or APIs."
+    },
+    "service3": {
+      "title": "Custom Systems & Integrations",
+      "description": "When standard solutions are not enough, we build systems that are adapted to your processes. This can be internal tools, dashboards, booking flows, e-commerce, or integrations between different systems."
+    },
+    "service4": {
+      "title": "Hosting, Operation & Support",
+      "description": "We can take care of the operating environment, monitoring, updates, and troubleshooting. With Docker and modern cloud solutions, we ensure that your app or website is fast, secure, and accessible."
+    },
+    "service5": {
+      "title": "Consultation & Further Development",
+      "description": "Do you already have a system or a website that needs to be updated, optimized, or further developed? We can step in as a development partner, do a code review, or take responsibility for further development."
+    }
   },
   "PortfolioPage": {
     "title": "Our Portfolio",
-    "project1_title": "Booking portal for a service company",
-    "project1_description": "Web app for booking, customer management, and admin panel.",
-    "project2_title": "KPI dashboard for internal monitoring",
-    "project2_description": "Dashboard with real-time data, graphs, and role-based login.",
-    "project3_title": "Community app for members",
-    "project3_description": "Mobile app for news, push notifications, member profiles, and login."
+    "intro": "Here is a selection of client projects, demo projects, and internal MVPs we have built. a mix of web apps, mobile solutions, and custom systems.",
+    "project1": {
+      "title": "Booking portal for a service company",
+      "description": "Web app for booking, customer management, and admin panel.",
+      "stack": "React, Next.js, Spring Boot, PostgreSQL, Tailwind, Docker"
+    },
+    "project2": {
+      "title": "KPI dashboard for internal monitoring",
+      "description": "Dashboard with real-time data, graphs, and role-based login.",
+      "stack": "React, TypeScript, REST/GraphQL, PostgreSQL"
+    },
+    "project3": {
+      "title": "Community app for members",
+      "description": "Mobile app for news, push notifications, member profiles, and login.",
+      "stack": "Flutter, API-backend, JWT"
+    },
+    "project4": {
+      "title": "Portfolio site for a creator",
+      "description": "Simple but stylish personal website with a project gallery and contact.",
+      "stack": "Next.js, Tailwind"
+    }
   },
   "ContactPage": {
     "title": "Let's Build Something Great Together",
