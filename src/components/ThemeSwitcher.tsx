@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -17,10 +17,10 @@ const ThemeSwitcher = () => {
 
   return (
     <button
-      className={`w-fit absolute right-5 top-2 bg-slate-200 dark:bg-gray-500 px-4 py-2 rounded-lg`}
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      className="p-2 rounded-md"
     >
-      {theme === 'light' ? 'Dark' : 'Light'}
+      {theme === 'light' ? '🌞' : '🌜'}
     </button>
   );
 };
