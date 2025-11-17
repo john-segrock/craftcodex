@@ -5,6 +5,8 @@ export const pathnames = {
   '/about': '/about',
   '/services': '/services',
   '/portfolio': '/portfolio',
+  '/portfolio/[slug]': '/portfolio/[slug]',
+  '/blog/[slug]': '/blog/[slug]',
   '/process': '/process',
   '/contact': '/contact',
   '/quote': '/contact'

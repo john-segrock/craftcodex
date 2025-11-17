@@ -1,48 +1,77 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { Linkedin, Github, Twitter } from 'lucide-react';
 
 const Team = () => {
   const t = useTranslations('Team');
 
+  const teamMembers = [
+    {
+      image: 'https://images.unsplash.com/photo-1557862921-37829c790f19',
+      name: t('member1_name'),
+      role: t('member1_role'),
+      social: {
+        linkedin: '#',
+        github: '#',
+        twitter: '#',
+      },
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e',
+      name: t('member2_name'),
+      role: t('member2_role'),
+      social: {
+        linkedin: '#',
+        github: '#',
+        twitter: '#',
+      },
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36',
+      name: t('member3_name'),
+      role: t('member3_role'),
+      social: {
+        linkedin: '#',
+        github: '#',
+        twitter: '#',
+      },
+    },
+  ];
+
   return (
-    <section className="py-20 bg-gray-800 text-white">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">{t('title')}</h2>
+    <section className="py-20 bg-card">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold tracking-tight">{t('title')}</h2>
+          <p className="mt-4 text-lg text-secondary max-w-2xl mx-auto">
+            {t('subtitle')}
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1557862921-37829c790f19"
-              alt="Team Member 1"
-              width={150}
-              height={150}
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">{t('member1_name')}</h3>
-            <p className="text-gray-400">{t('member1_role')}</p>
-          </div>
-          <div className="text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e"
-              alt="Team Member 2"
-              width={150}
-              height={150}
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">{t('member2_name')}</h3>
-            <p className="text-gray-400">{t('member2_role')}</p>
-          </div>
-          <div className="text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
-              alt="Team Member 3"
-              width={150}
-              height={150}
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold mb-2">{t('member3_name')}</h3>
-            <p className="text-gray-400">{t('member3_role')}</p>
-          </div>
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="bg-background rounded-lg border border-border p-8 text-center"
+            >
+              <div className="relative w-32 h-32 mx-auto mb-4">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  style={{objectFit: "cover"}}
+                  className="rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+              <p className="text-primary mb-4">{member.role}</p>
+              <div className="flex justify-center space-x-4">
+                <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={20} className="text-secondary hover:text-primary" /></a>
+                <a href={member.social.github} target="_blank" rel="noopener noreferrer"><Github size={20} className="text-secondary hover:text-primary" /></a>
+                <a href={member.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={20} className="text-secondary hover:text-primary" /></a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
