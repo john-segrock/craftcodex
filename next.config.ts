@@ -1,10 +1,10 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import path from 'path';
+import type { NextConfig } from 'next';
 
-const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
@@ -13,13 +13,10 @@ const nextConfig = {
       },
     ],
   },
-  turbopack: {
-    root: path.resolve(__dirname)
-  },
   typescript: {
     // Allows builds to complete even with type errors
-    ignoreBuildErrors: false
-  }
+    ignoreBuildErrors: false,
+  },
 };
 
 export default withNextIntl(nextConfig);

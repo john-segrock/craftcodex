@@ -1,71 +1,114 @@
+
 'use client';
+
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-const ContactPage = () => {
+export default function ContactPage() {
   const t = useTranslations('ContactPage');
-  const [fullName, setFullName] = useState('');
-  const [workEmail, setWorkEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    workEmail: '',
+    message: '',
+  });
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ fullName, workEmail, message }),
-    });
+    setStatus('sending');
 
-    if (response.ok) {
-      setSuccessMessage('Your message has been sent successfully!');
-      setFullName('');
-      setWorkEmail('');
-      setMessage('');
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ fullName: '', workEmail: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setStatus('error');
     }
   };
 
   return (
-    <div className="container mx-auto py-20">
-      <div className="mx-auto max-w-2xl text-center">
-        <h1 className="text-4xl sm:text-5xl font-black tracking-tight">{t('title')}</h1>
-        <p className="mt-4 text-lg text-gray-500">{t('subtitle')}</p>
+    <div className="container mx-auto px-4 py-12">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">{t('title')}</h1>
+        <p className="mt-4 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
       </div>
-      <div className="mx-auto mt-16 max-w-2xl">
-        <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6 sm:p-8">
-          <h2 className="text-2xl font-bold tracking-tight">{t('form_title')}</h2>
-          {successMessage && <p className="mt-4 text-green-500">{successMessage}</p>}
-          <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-            <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="full-name" className="block text-sm font-medium leading-6">{t('full_name')}</label>
-                <div className="mt-2">
-                  <input type="text" name="full-name" id="full-name" placeholder={t('full_name_placeholder')} value={fullName} onChange={(e) => setFullName(e.target.value)} className="block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6 bg-gray-50 dark:bg-gray-700" />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="work-email" className="block text-sm font-medium leading-6">{t('work_email')}</label>
-                <div className="mt-2">
-                  <input type="email" name="work-email" id="work-email" placeholder={t('work_email_placeholder')} value={workEmail} onChange={(e) => setWorkEmail(e.target.value)} className="block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6 bg-gray-50 dark:bg-gray-700" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium leading-6">{t('message')}</label>
-              <div className="mt-2">
-                <textarea name="message" id="message" rows={4} placeholder={t('message_placeholder')} value={message} onChange={(e) => setMessage(e.target.value)} className="block w-full rounded-lg border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6 bg-gray-50 dark:bg-gray-700"></textarea>
-              </div>
-            </div>
-            <div>
-              <button type="submit" className="flex w-full justify-center rounded-lg bg-blue-500 px-3 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-colors">{t('submit_button')}</button>
-            </div>
-          </form>
-        </div>
+      <div className="mt-12 max-w-xl mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label htmlFor="fullName" className="block text-sm font-medium">
+              {t('full_name')}
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              placeholder={t('full_name_placeholder')}
+              className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="workEmail" className="block text-sm font-medium">
+              {t('work_email')}
+            </label>
+            <input
+              type="email"
+              id="workEmail"
+              name="workEmail"
+              value={formData.workEmail}
+              onChange={handleChange}
+              placeholder={t('work_email_placeholder')}
+              className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium">
+              {t('message')}
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={t('message_placeholder')}
+              className="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            ></textarea>
+          </div>
+          <div className="text-center">
+            <button
+              type="submit"
+              disabled={status === 'sending'}
+              className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
+            >
+              {status === 'sending' ? 'Sending...' : t('submit_button')}
+            </button>
+          </div>
+        </form>
+        {status === 'success' && <p className="mt-4 text-center text-green-500">Your message has been sent successfully!</p>}
+        {status === 'error' && <p className="mt-4 text-center text-red-500">An error occurred. Please try again.</p>}
       </div>
     </div>
   );
-};
-
-export default ContactPage;
+}

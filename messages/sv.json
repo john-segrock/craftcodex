@@ -92,25 +92,51 @@
   },
   "ServicesPage": {
     "title": "Våra Tjänster",
-    "service1_title": "Webbplatser & Webbappar",
-    "service1_description": "Vi bygger moderna, responsiva webbplatser och webbappar som fungerar lika bra på mobilen som på datorn. Allt från informationssidor och landningssidor till bokningssystem, portaler och instrumentpaneler.",
-    "service2_title": "Mobilappar för iOS & Android",
-    "service2_description": "Vi utvecklar mobilappar med React Native eller Flutter, anpassade för både iOS och Android. Vi kan koppla appen till befintliga system, betallösningar eller API:er.",
-    "service3_title": "Anpassade System & Integrationer",
-    "service3_description": "När standardlösningar inte räcker till bygger vi system som är anpassade efter dina processer. Det kan handla om interna verktyg, instrumentpaneler, bokningsflöden, e-handel eller integrationer mellan olika system.",
-    "service4_title": "Hosting, Drift & Support",
-    "service4_description": "Vi kan ta hand om driftmiljön, övervakning, uppdateringar och felsökning. Med Docker och moderna molnlösningar ser vi till att din app eller webbplats är snabb, säker och tillgänglig.",
-    "service5_title": "Konsultation & Vidareutveckling",
-    "service5_description": "Har du redan ett system eller en webbplats som behöver uppdateras, optimeras eller vidareutvecklas? Vi kan kliva in som utvecklingspartner, göra en kodgranskning eller ta ansvar för vidareutvecklingen."
+    "intro": "Vi hjälper dig att gå från idé till färdig lösning – oavsett om det handlar om en enkel webbplats, en mobilapp eller ett skräddarsytt system. Här ser du en överblick över vad vi kan hjälpa dig med.",
+    "service1": {
+      "title": "Webbplatser & Webbappar",
+      "description": "Vi bygger moderna, responsiva webbplatser och webbappar som fungerar lika bra på mobil som på dator. Allt från informationssidor och landningssidor till bokningssystem, portaler och dashboards."
+    },
+    "service2": {
+      "title": "Mobilappar för iOS & Android",
+      "description": "Vi utvecklar mobilappar med React Native eller Flutter, anpassade för både iOS och Android. Vi kan koppla appen mot befintliga system, betallösningar eller API:er."
+    },
+    "service3": {
+      "title": "Skräddarsydda System & Integrationer",
+      "description": "När standardlösningar inte räcker bygger vi system som är anpassade efter dina processer. Det kan vara interna verktyg, dashboards, bokningsflöden, e-handel eller integrationer mellan olika system."
+    },
+    "service4": {
+      "title": "Hosting, Drift & Support",
+      "description": "Vi kan ta hand om driftmiljö, övervakning, uppdateringar och felsökning. Med Docker och moderna molnlösningar ser vi till att din app eller webbplats är snabb, säker och tillgänglig."
+    },
+    "service5": {
+      "title": "Konsultation & Vidareutveckling",
+      "description": "Har du redan ett system eller en webbplats som behöver uppdateras, optimeras eller byggas vidare? Vi kan kliva in som utvecklingspartner, göra kodgranskning eller ta ansvar för vidareutveckling."
+    }
   },
   "PortfolioPage": {
     "title": "Vår Portfolio",
-    "project1_title": "Bokningsportal för ett tjänsteföretag",
-    "project1_description": "Webbapp för bokning, kundhantering och adminpanel.",
-    "project2_title": "KPI-instrumentpanel för intern övervakning",
-    "project2_description": "Instrumentpanel med realtidsdata, grafer och rollbaserad inloggning.",
-    "project3_title": "Gemenskapssapp för medlemmar",
-    "project3_description": "Mobilapp för nyheter, push-notiser, medlemsprofiler och inloggning."
+    "intro": "Här är ett urval av kundprojekt, demoprojekt och interna MVP:er vi har byggt. En blandning av webbappar, mobila lösningar och skräddarsydda system.",
+    "project1": {
+      "title": "Bokningsportal för tjänsteföretag",
+      "description": "Webbapp för bokning, kundhantering och adminpanel.",
+      "stack": "React, Next.js, Spring Boot, PostgreSQL, Tailwind, Docker"
+    },
+    "project2": {
+      "title": "KPI-dashboard för intern uppföljning",
+      "description": "Dashboard med realtidsdata, grafer och rollbaserad inloggning.",
+      "stack": "React, TypeScript, REST/GraphQL, PostgreSQL"
+    },
+    "project3": {
+      "title": "Community-app för medlemmar",
+      "description": "Mobilapp för nyheter, pushnotiser, medlemsprofil och inloggning.",
+      "stack": "Flutter, API-backend, JWT"
+    },
+    "project4": {
+      "title": "Portfoliosida för kreatör",
+      "description": "Enkel men snygg personlig webbplats med projektgalleri och kontakt.",
+      "stack": "Next.js, Tailwind"
+    }
   },
   "ContactPage": {
     "title": "Låt oss bygga något fantastiskt tillsammans",
