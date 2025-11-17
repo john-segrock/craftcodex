@@ -2,31 +2,11 @@ export const locales = ['en', 'ar', 'sv'] as const;
 
 export const pathnames = {
   '/': '/',
-  '/about': {
-    en: '/about',
-    sv: '/om-oss',
-    ar: '/حولنا'
-  },
-  '/services': {
-    en: '/services',
-    sv: '/tjanster',
-    ar: '/خدماتنا'
-  },
-  '/portfolio': {
-    en: '/portfolio',
-    sv: '/portfolio',
-    ar: '/معرض-اععمالنا'
-  },
-  '/process': {
-    en: '/process',
-    sv: '/process',
-    ar: '/العملية'
-  },
-  '/contact': {
-    en: '/contact',
-    sv: '/kontakt',
-    ar: '/اتصل-بنا'
-  },
+  '/about': '/about',
+  '/services': '/services',
+  '/portfolio': '/portfolio',
+  '/process': '/process',
+  '/contact': '/contact',
   '/quote': '/contact'
 } as const;
 
