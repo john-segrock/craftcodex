@@ -32,6 +32,7 @@
   },
   "ValueProposition": {
     "title": "Why Choose Craftcodex?",
+    "subtitle": "We are a small team of developers who are passionate about building great products.",
     "card1_title": "Holistic Solutions",
     "card1_description": "From idea, design, and backend to hosting & support.",
     "card2_title": "Modern Tech Stack",
@@ -41,15 +42,19 @@
   },
   "Services": {
     "title": "What we help you with",
+    "subtitle": "We offer a wide range of services to help you build your product.",
     "service1_title": "Websites & Web Apps",
     "service1_description": "Corporate sites, booking systems, dashboards, e-commerce.",
     "service2_title": "Mobile Apps (iOS & Android)",
     "service2_description": "Flutter / React Native, integrated with existing systems.",
     "service3_title": "Custom Systems",
-    "service3_description": "Internal tools, integrations, automation, APIs."
+    "service3_description": "Internal tools, integrations, automation, APIs.",
+    "service4_title": "DevOps & Cloud",
+    "service4_description": "We help you with a scalable and secure infrastructure."
   },
   "Process": {
     "title": "How it works",
+    "subtitle": "Our process is simple and transparent.",
     "step1_title": "First call",
     "step1_description": "We listen to your idea and needs.",
     "step2_title": "Proposal & quote",
@@ -61,6 +66,8 @@
   },
   "Portfolio": {
     "title": "Projects we are proud of",
+    "subtitle": "Here are some of the projects we have worked on.",
+    "view_project": "View project",
     "project1_title": "Booking portal for a service company",
     "project1_description": "Web app for booking, customer management, and admin panel.",
     "project2_title": "KPI dashboard for internal monitoring",
@@ -70,6 +77,7 @@
   },
   "Team": {
     "title": "The Team Behind Craftcodex",
+    "subtitle": "We are a small team of passionate developers.",
     "member1_name": "John Doe",
     "member1_role": "Fullstack Developer",
     "member2_name": "Jane Doe",
@@ -136,7 +144,8 @@
       "title": "Portfolio site for a creator",
       "description": "Simple but stylish personal website with a project gallery and contact.",
       "stack": "Next.js, Tailwind"
-    }
+    },
+    "view_project": "View Project"
   },
   "ContactPage": {
     "title": "Let's Build Something Great Together",
@@ -149,5 +158,97 @@
     "message": "Tell us about your project...",
     "message_placeholder": "Describe your goals, timeline, and any specific requirements.",
     "submit_button": "Send Inquiry"
+  },
+  "Technologies": {
+    "title": "Technologies We Use",
+    "subtitle": "We work with a modern and flexible tech stack to build the best possible solutions."
+  },
+  "Testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "We are proud to have worked with amazing clients. Here's what some of them have to say about us.",
+    "testimonial1_quote": "Craftcodex delivered a fantastic product. The communication was excellent, and the result exceeded our expectations.",
+    "testimonial1_author": "Client 1",
+    "testimonial1_role": "CEO, Company 1",
+    "testimonial2_quote": "The team at Craftcodex is incredibly skilled and professional. They are a pleasure to work with.",
+    "testimonial2_author": "Client 2",
+    "testimonial2_role": "CTO, Company 2",
+    "testimonial3_quote": "We are very happy with the result. Craftcodex is a reliable and competent partner.",
+    "testimonial3_author": "Client 3",
+    "testimonial3_role": "Founder, Company 3"
+  },
+  "Blog": {
+    "title": "From Our Blog",
+    "subtitle": "We share our thoughts on technology, design, and business.",
+    "post1_category": "Web Development",
+    "post1_title": "The Benefits of a Modern Tech Stack",
+    "post1_excerpt": "Learn how a modern tech stack can help your business grow.",
+    "post2_category": "AI Solutions",
+    "post2_title": "How AI Can Transform Your Business",
+    "post2_excerpt": "Discover the possibilities of AI and how it can be applied to your business.",
+    "post3_category": "Cyber Security",
+    "post3_title": "The Importance of Cyber Security",
+    "post3_excerpt": "Learn how to protect your business from cyber threats.",
+    "read_more": "Read more"
+  },
+  "QuotePage": {
+    "title": "Request a Quote",
+    "subtitle": "Tell us about your project, and we'll get back to you with a quote within 24 hours.",
+    "requestType": {
+        "label": "What do you want to do?",
+        "quote": "Get a quote",
+        "meeting": "Book a meeting"
+    },
+    "projectType": {
+        "label": "Type of project",
+        "placeholder": "Select project type",
+        "webapp": "Website / Web app",
+        "mobileapp": "Mobile app (iOS / Android)",
+        "custom": "Custom system / Integration",
+        "other": "Other / Unsure"
+    },
+    "budget": {
+        "label": "Budget level (optional)",
+        "placeholder": "Select budget level",
+        "o1": "< $2,000",
+        "o2": "$2,000 - $5,000",
+        "o3": "$5,000 - $10,000",
+        "o4": "$10,000+",
+        "o5": "Don't know yet"
+    },
+    "timeline": {
+        "label": "Timeline",
+        "placeholder": "Select timeline",
+        "o1": "As soon as possible",
+        "o2": "Within 1-3 months",
+        "o3": "3+ months"
+    },
+    "description": {
+        "label": "Describe your project"
+    },
+    "name": {
+        "label": "Name"
+    },
+    "email": {
+        "label": "Email"
+    },
+    "company": {
+        "label": "Company / Organization (optional)"
+    },
+    "phone": {
+        "label": "Phone (optional)"
+    },
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Your quote request has been sent successfully!",
+    "error": "An error occurred. Please try again.",
+    "disclaimer": "You are not committing to anything. We will get back to you with questions or suggestions."
+  },
+  "ProjectDetailPage": {
+    "title": "Project:",
+    "description": "This is a placeholder for the project description. It will be replaced with the actual project details."
+  },
+  "BlogDetailPage": {
+    "title": "Blog Post:",
+    "description": "This is a placeholder for the blog post. It will be replaced with the actual content."
   }
 }
